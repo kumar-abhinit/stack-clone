@@ -5,20 +5,12 @@ import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import List from "@mui/material/List";
 import CssBaseline from "@mui/material/CssBaseline";
-import Typography from "@mui/material/Typography";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { Box } from "@mui/material";
 import { getImageURL } from "../utils/image-util";
-
-const images: Record<string, { default: string }> = import.meta.glob(
-  "/public/*.svg",
-  {
-    eager: true,
-  }
-);
 
 const drawerWidth = 240;
 
